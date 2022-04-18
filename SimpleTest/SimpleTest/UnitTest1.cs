@@ -8,7 +8,7 @@ namespace SimpleTest
         [Test]
         public void Test1()
         {
-            var browser = AqualityServices.Browser;
+            var browser = AqualityServices.Browser;            
             browser.Maximize();
             browser.GoTo("https://www.google.com/");
             Assert.AreEqual(browser.CurrentUrl, "https://www.google.com/", "not the same url");
